@@ -1,8 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import axios from 'axios'
-
-// Asynchronous server component responsible for rendering the page
+/* Server Component */
 
 interface Blog {
     id: string

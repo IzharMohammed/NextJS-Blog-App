@@ -1,8 +1,7 @@
 import React, { Suspense } from 'react';
 import PostsList from '@/components/posts-list';
 
-// Async server component to render the page
-async function page() {
+function page() {
     return (
         <main className='text-center pt-36 px-5 border border-white min-h-screen max-w-[85rem] mx-auto bg-gray-900'>
             {/* Page title */}
