@@ -1,6 +1,7 @@
 "use server"
 import prisma from '@/lib/db';
 import { revalidatePath } from 'next/cache';
+import { redirect } from 'next/navigation';
 import React from 'react'
 
 async function createPost(formData: FormData) {
@@ -15,7 +16,8 @@ async function createPost(formData: FormData) {
             body
         }
     } )
-    revalidatePath('/posts');
+    redirect('/posts');
+    // revalidatePath('/posts');
 }
 
 export default createPost
