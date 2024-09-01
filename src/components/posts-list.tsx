@@ -13,7 +13,7 @@ async function PostsList() {
         <div className='flex flex-col'>
             {
                 blogs.map(blog => (
-                    <Link href={`/posts/${blog.id}`}>{blog.title}</Link>
+                    <div key={blog.id}><Link href={`/posts/${blog.id}`}>{blog.title}</Link></div>
                 ))
             }
         </div>

@@ -17,7 +17,8 @@ async function createPost(formData: FormData) {
         }
     } )
     redirect('/posts');
-    // revalidatePath('/posts');
+  //Revalidating the cache
+    revalidatePath('/posts');
 }
 
 export default createPost
