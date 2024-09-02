@@ -18,7 +18,7 @@ const navLinks = [
 
 function Header() {
     return (
-        <div className='flex justify-between px-10 border-b '>
+        <div className='flex justify-between px-10 border-b p-4'>
            <Link href='/'>
            <img
                 src='https://avatars.githubusercontent.com/u/124599?v=4'

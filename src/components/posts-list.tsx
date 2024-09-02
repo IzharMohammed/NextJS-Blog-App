@@ -6,7 +6,6 @@ import prisma from '@/lib/db';
 
 
 async function PostsList() {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
     const blogs = await prisma.post.findMany();
     console.log('type of blogs', typeof (blogs));
     return (
